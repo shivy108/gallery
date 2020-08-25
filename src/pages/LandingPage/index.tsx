@@ -9,10 +9,10 @@ const App = () => {
   return (
     <div className="mainContainer">
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=x2D7jHfitzk"
+        url="video/untitled.webm"
         width="100%"
         height="100%"
-        style={{opacity:0.65}}
+        // style={{opacity:0.65}}
         playing={true}
         loop={true}
         muted={true}
