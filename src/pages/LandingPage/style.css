@@ -1,8 +1,8 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
 }
 
-div {
+.mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@ div {
   width: 100%;
 }
 
-.mainContent {
+#mainContent {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -19,4 +19,13 @@ div {
   width: 100%;
   position: fixed;
 }
+
+#mainQuotes{
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
 

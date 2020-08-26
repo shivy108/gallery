@@ -1,10 +1,21 @@
-import React, { useState } from 'react'
-import './style.css'
+import React, { FunctionComponent } from "react";
+import "./style.css";
 
-const Quote = ()=>{
-    
-    return(
-        <div>Hello</div>
-    )
-}
+type Props = {
+  text: string;
+  id: string;
+  isVisible: boolean;
+};
+
+const Quote: FunctionComponent<Props> = ({ text, id, isVisible }) => {
+  return (
+    <>
+      {isVisible ? (
+        <></>
+      ) : (
+        <div className={"quoteContainer"}>{text}</div>
+      )}
+    </>
+  );
+};
 export default Quote;
