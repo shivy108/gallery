@@ -7,6 +7,7 @@
 }
 
 .Top {
+  display: flex;
   height: 20%;
   width: 100%;
   background-color: gray;
@@ -29,4 +30,8 @@ h2{
     padding:10px;
     cursor: pointer;
     border-right: 2px solid gray;
+}
+.title, .details{
+  margin:10px;
+  
 }
