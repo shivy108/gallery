@@ -11,9 +11,9 @@ const Project: FunctionComponent<Props> = ({ title, technologies, link }) => {
   return (
     <div className="projectContainer">
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <h1 >{title}</h1>
+        <h1 className="ProjectTitle">{title}</h1>
       </a>
-      <p>{technologies}</p>
+      <p className="ProjectTech">{technologies}</p>
     </div>
   );
 };

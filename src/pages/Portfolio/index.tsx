@@ -14,7 +14,7 @@ const Portfolio = () => {
       <div className="Content">
         <nav className="NavBar">
           <h2 onClick={clickPortfolio}>Portfolio</h2>
-          <h2 onClick={clickPortfolio}>About</h2>
+          {/* <h2 onClick={clickPortfolio}>About</h2> */}
         </nav>
         <Project
           title="Jobtracker-Resume Generator"

@@ -1,0 +1,12 @@
+.ProjectTitle{
+    font-size: larger;
+    margin:0px;
+    padding-bottom: 5px;
+}
+.projectContainer{
+    padding: 10px;
+}
+
+.ProjectTech{
+    font-size: small;
+}
