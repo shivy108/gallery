@@ -51,7 +51,7 @@
 }
 
 .section button {
-  border: solid 1px rgb(172, 27, 56);
+  border: solid 1px antiquewhite;
   transition: all 1s;
   background-color: transparent;
   height: 40px;
@@ -59,7 +59,7 @@
   width: 120px;
   font-weight: 500;
   font-size: large;
-  color: rgb(172, 27, 56);
+  color: antiquewhite;
   opacity: 0.5;
   z-index: 1;
 }
