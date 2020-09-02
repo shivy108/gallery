@@ -1,32 +1,20 @@
 import React from "react";
-
-import "./style.css";
-import Quote from "../../components/Quote";
-import { useHistory } from "react-router";
-
+import "./style.scss";
 const App = () => {
-  const { push } = useHistory();
-
-  const onClickHandler = () => {
-    push("/portfolio");
-  };
-
   return (
-    <div className="section">
-      <div className="content">
-        <h1>Welcome</h1>
-        <h3>Be Inspired</h3>
-        <button onClick={onClickHandler}>Gallery</button>
-        <div className="quoteWrapper">
-          
-          <Quote id="1" />
+    <div className="page">
+      <div className="nav">
+        <div className="navIconWrapper">
+          <h4 className="navIcon">SD</h4>
         </div>
-      </div>
-      <div className="videoWrapper">
-        <div className="colorOverlay"></div>
-        <video autoPlay loop muted playsInline>
-          <source src="video/untitled.webm" type="video/webm" />
-        </video>
+        <div className="navMenu">
+          <h4 className="navItem">Home</h4>
+          <h4 className="navItem">About</h4>
+          <h4 className="navItem">Portfolio</h4>
+          <div className="navButtonWrapper">
+            <h4 className="navButton">Resume</h4>
+          </div>
+        </div>
       </div>
     </div>
   );

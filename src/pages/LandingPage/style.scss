@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 8, 8);
+  color: whitesmoke;
+}
+.nav {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+.navItem {
+  margin-right: 10px;
+  .navButton {
+    margin: 3px;
+  }
+}
+.navButtonWrapper {
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+.navIcon{
+  margin: 10px;
+}
