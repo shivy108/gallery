@@ -5,7 +5,11 @@ const App = () => {
     <div className="page">
       <div className="nav">
         <div className="navIconWrapper">
-          <h4 className="navIcon">SD</h4>
+          <div className="iconWrapper1">
+            <div className="iconWrapper2">
+              <h4 className="navIcon">SD</h4>
+            </div>
+          </div>
         </div>
         <div className="navMenu">
           <h4 className="navItem">Home</h4>
