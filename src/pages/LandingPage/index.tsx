@@ -7,6 +7,8 @@ import { AiOutlineMail, AiOutlineGitlab } from "react-icons/ai";
 import netflix from "../../assets/netflix.jpg";
 import laptop from "../../assets/laptop.png";
 import Project from "../../components/Project";
+import nike from "../../assets/nike-1.gif";
+
 
 const App = () => {
   const [show, handleShow] = useState(false);
@@ -36,12 +38,12 @@ const App = () => {
           </div>
         </div>
         <div className="navMenu">
-          <h4 className="navItem">Home</h4>
-          <h4 className="navItem">About</h4>
-          <h4 className="navItem">Portfolio</h4>
-          <div className="navButtonWrapper">
+          <h4 className="navItem"><a href="#top">Home</a></h4>
+         <a href="#About"> <h4 className="navItem">About</h4></a>
+          <a href="#Projects"><h4 className="navItem">Portfolio</h4></a>
+          <a href="../../documents/resume.pdf" download="resume.pdf"><div className="navButtonWrapper">
             <h4 className="navButton">Resume</h4>
-          </div>
+          </div></a>
         </div>
       </div>
       <div className="welcomeBlock">
@@ -82,7 +84,7 @@ const App = () => {
           </a>
         </div>
       </div>
-      <section className="about">
+      <section className="about" id="About">
         <div className="wrapper">
           <h1 className="title">About me</h1>
           <p className="aboutPara">
@@ -123,7 +125,12 @@ const App = () => {
               "npm movie-trailer",
             ]}
           />
-          
+          <Project
+            title="Online Shop"
+            link="https://netflix-clone130678.web.app/"
+            image={nike}
+            technologies={["React", "Sass", "firebase", "typeScript", "Redux"]}
+          />
         </div>
       </section>
     </div>
