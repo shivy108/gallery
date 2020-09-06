@@ -158,12 +158,10 @@ html {
   font-size: 2rem;
   width: fit-content;
   color: rgba($color: violet, $alpha: 1);
-  background-color: rgba(43, 44, 44, 0.4);
   margin: 1rem;
 }
 .wrapper {
-  
-  max-width: 80%;
+  width: 80%;
 }
 
 .about {
@@ -175,7 +173,8 @@ html {
   .aboutPara {
     line-height: 1.4;
     margin: 1.5rem;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: #111;
     padding: 2rem;
   }
 }

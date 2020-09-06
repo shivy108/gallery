@@ -3,34 +3,43 @@ import "./style.scss";
 
 type Props = {
   title: String;
-  technologies: String;
+  technologies: string[];
   link: string;
-  image1: string;
-  image2: string;
+  image: string;
 };
 
 const Project: FunctionComponent<Props> = ({
   title,
   technologies,
   link,
-  image1,
-  image2,
+  image,
 }) => {
+  console.log(technologies);
   return (
-    <div className='projectContainer'>
-      <a
-        className='ProjectTitle'
-        href={link}
-        target='_blank'
-        rel='noopener noreferrer'>
-        <h1>{title}</h1>
-      </a>
-      <div className='imageWrapper'>
-        <img className='image1' src={image1} alt={image1} />
-        <img src={image2} alt={image2} className='image2' />
-        <p className='ProjectTech'>{technologies}</p>
+    <div className="projectContainer">
+      <div className="imageWrapper">
+        
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <img className="image1" src={image} alt={image} />
+          <div className="imageOverlay"></div>
+        </a>
       </div>
-      
+      <div className="detailWrapper">
+        <a
+          className="ProjectTitle"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h1 className='projectTitle'>{title}</h1>
+        </a>
+        <div className="ProjectTech">
+          <h4 className="techTitle">Tech used</h4>
+          {technologies.map((item) => {
+            return <p className="tech">{item}</p>;
+          })}
+        </div>
+      </div>
     </div>
   );
 };
