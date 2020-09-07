@@ -15,13 +15,13 @@ const App = () => {
   useEffect(() => {
     console.log(show);
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 1000) {
+      if (window.scrollY) {
         handleShow(true);
       } else handleShow(false);
     });
     return () => {
       window.removeEventListener("scroll", () => {
-        handleShow(false);
+          handleShow(false);
       });
     };
   }, [show]);

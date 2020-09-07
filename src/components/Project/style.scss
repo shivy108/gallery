@@ -40,9 +40,10 @@
   padding: 0.3rem;
   width: fit-content;
   align-items: center;
+  flex-wrap: wrap;
   .tech {
     padding-left: 0.3rem;
-    margin-left: 0.3rem;
+    margin: 0.3rem;
     border-left: 0.1rem solid rgba(238, 130, 238,0.4);
   }
 }
