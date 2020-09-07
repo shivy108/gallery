@@ -16,7 +16,7 @@
     width: fit-content;
     text-align: end;
     color: rgb(19, 46, 60);
-    box-shadow: -2px -2px 20px 1px whitesmoke;
+    box-shadow: -1px -1px 20px 1px rgba(245, 245, 245,0.5);
     padding: 1rem;
     transition: 300ms;
     font-size: 1rem;
@@ -24,6 +24,7 @@
   .projectTitle:hover {
     scale: 1.06;
     transition: 300ms;
+    box-shadow: -2px -2px 20px 6px whitesmoke;
   }
 }
 
@@ -34,7 +35,7 @@
   margin: 1rem;
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   box-shadow: -1px 0px 10px 4px rgba(17, 17, 17, 0.4);
   padding: 0.3rem;
   width: fit-content;
@@ -46,7 +47,7 @@
   }
 }
 .techTitle {
-  font-size: 0.85rem;
+  font-size: 1rem;
   padding: 0.3rem;
   color: violet;
   margin-top: 1rem;
