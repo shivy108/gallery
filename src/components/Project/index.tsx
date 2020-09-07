@@ -33,8 +33,9 @@ const Project: FunctionComponent<Props> = ({
         >
           <h1 className='projectTitle'>{title}</h1>
         </a>
+        <h4 className="techTitle">Technologies used</h4>
         <div className="ProjectTech">
-          <h4 className="techTitle">Tech used</h4>
+          
           {technologies.map((item) => {
             return <p className="tech">{item}</p>;
           })}

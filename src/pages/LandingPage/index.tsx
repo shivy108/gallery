@@ -28,7 +28,7 @@ const App = () => {
   }, [show]);
 
   return (
-    <div className="page">
+    <div className="page" id='page'>
       <div className={show ? "navBlur" : "nav"}>
         <div className="navIconWrapper">
           <div className="iconWrapper1">
@@ -38,7 +38,7 @@ const App = () => {
           </div>
         </div>
         <div className="navMenu">
-          <h4 className="navItem"><a href="#top">Home</a></h4>
+          <h4 className="navItem"><a href="#page">Home</a></h4>
          <a href="#About"> <h4 className="navItem">About</h4></a>
           <a href="#Projects"><h4 className="navItem">Portfolio</h4></a>
           <a href="../../documents/resume.pdf" download="resume.pdf"><div className="navButtonWrapper">
@@ -95,9 +95,9 @@ const App = () => {
           </p>
         </div>
       </section>
-      <section className="projects">
+      <section className="projects" id='Projects'>
         <div className="wrapper">
-          <h1 className="title">Projects</h1>
+          <h1 className="title">Things I've built</h1>
           <Project
             title="CV Generator"
             link="https://drive.google.com/file/d/1NmoW0M0gn1n19iPn2Hk7UMuC08_aPFf2/view?ts=5f31473b"
