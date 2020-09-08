@@ -1,0 +1,18 @@
+.DisplayProject {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.right {
+  cursor: pointer;
+  position: relative;
+  left: 100%;
+  font-size: 6rem;
+  margin: 1rem;
+}
+
+.left {
+  font-size: 6rem;
+  cursor: pointer;
+  margin: 1rem;
+}

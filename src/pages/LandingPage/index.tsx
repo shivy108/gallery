@@ -5,10 +5,7 @@ import "./style.scss";
 import { FaChevronCircleDown } from "react-icons/fa";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { AiOutlineMail, AiOutlineGitlab } from "react-icons/ai";
-import netflix from "../../assets/netflix.jpg";
-import laptop from "../../assets/laptop.png";
-import Project from "../../components/Project";
-import nike from "../../assets/nike-1.gif";
+import DisplayProject from "../../components/DisplayProject";
 
 
 const App = () => {
@@ -22,7 +19,6 @@ const App = () => {
   });
 
   useEffect(() => {
-    console.log(show);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 621) {
         handleShow(true);
@@ -142,41 +138,10 @@ const App = () => {
       <section className="projects" id="Projects">
         <div className="wrapper">
           <h1 className="title">Things I've built</h1>
-          <Project
-            title="CV Generator"
-            link="https://drive.google.com/file/d/1NmoW0M0gn1n19iPn2Hk7UMuC08_aPFf2/view?ts=5f31473b"
-            image={laptop}
-            technologies={[
-              "react",
-              "javascript",
-              "django",
-              "python",
-              "docker",
-              "react-pdf",
-            ]}
-          />
-          <Project
-            title="Netflix Clone"
-            link="https://netflix-clone130678.web.app/"
-            image={netflix}
-            technologies={[
-              "React",
-              "styled-components",
-              "firebase",
-              "typeScript",
-              "moviedb API",
-              "react-youtube",
-              "npm movie-trailer",
-            ]}
-          />
-          <Project
-            title="Online Shop"
-            link="https://netflix-clone130678.web.app/"
-            image={nike}
-            technologies={["React", "Sass", "firebase", "typeScript", "Redux"]}
-          />
+          <DisplayProject/>
         </div>
       </section>
+      
     </div>
   );
 };
