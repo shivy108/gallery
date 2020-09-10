@@ -87,7 +87,7 @@ const App = () => {
         <div className="bird-container bird-container--four">
           <div className="bird bird--four"></div>
         </div>
-        <FaChevronCircleDown className="icon" />
+        <a href="#About"><FaChevronCircleDown className="icon" /></a>
       </div>
       <div  className="welcomeMessage">
         <h2 className="message">
