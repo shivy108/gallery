@@ -50,7 +50,7 @@
   padding: 0.3rem;
   color: violet;
   margin-top: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   width: fit-content;
 }
 .image1 {
@@ -61,6 +61,8 @@
   width: 50%;
   display: flex;
   align-items: center;
+  animation-name: slide;
+  animation-duration: 1s;
   justify-content: flex-start;
 }
 .detailWrapper {
@@ -68,4 +70,11 @@
   flex-direction: column;
   padding: 1rem;
   width: 50%;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide{
+  from {opacity: 0;}
+  to{opacity: 1;}
 }
