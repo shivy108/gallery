@@ -16,6 +16,7 @@ const DisplayProject = () => {
     if (one) {
       setOne(false);
       setTwo(true);
+     
     }
     if (two) {
       setTwo(false);
