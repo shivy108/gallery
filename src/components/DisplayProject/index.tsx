@@ -69,7 +69,7 @@ const DisplayProject = () => {
       {two ? (
         <Project
           title="Netflix Clone"
-          link="https://netflix-clone130678.web.app/"
+          link="https://netflix130678.web.app/"
           image={netflix}
           technologies={[
             "React",
