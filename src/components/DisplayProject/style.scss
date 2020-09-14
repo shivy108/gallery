@@ -1,9 +1,9 @@
 .DisplayProject {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  
   animation-name: displayProject;
   animation-duration: 2s;
+  
 }
 @keyframes displayProject {
   from {
@@ -13,22 +13,26 @@
     opacity: 1;
   }
 }
-
+.buttonDiv {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 .LeftWrapper {
-  font-size: 4rem;
+  font-size: 3rem;
   cursor: pointer;
-  margin: 1rem;
+  
 }
 
 .RightWrapper {
   cursor: pointer;
-  position: relative;
-  left: 100%;
+
   font-size: 3rem;
-  margin: 1rem;
+  
 }
 
-.left, .right  {
+.left,
+.right {
   animation-name: scale;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -36,16 +40,21 @@
   opacity: 0.4;
 }
 
-@keyframes scale{
-  0%{scale: 0.98;}
-  50%{scale: 1.12;}
-  100%{scale: 1.0;}
-  
-  
+@keyframes scale {
+  0% {
+    scale: 0.98;
+  }
+  50% {
+    scale: 1.12;
+  }
+  100% {
+    scale: 1;
+  }
 }
-.left:hover,.right:hover{
+.left:hover,
+.right:hover {
   transition: 300ms;
   color: violet;
   opacity: 0.4;
-  scale:1.05;
+  scale: 1.05;
 }

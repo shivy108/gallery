@@ -43,18 +43,19 @@ const DisplayProject = () => {
   };
 
   return (
-    <div className='DisplayProject'>
-      <div className='RightWrapper'>
-        <IoIosArrowDroprightCircle className='right' onClick={handleRight} />
+    <div className="DisplayProject">
+      <div className="buttonDiv">
+        <div className="RightWrapper">
+          <IoIosArrowDroprightCircle className="right" onClick={handleRight} />
+        </div>
+        <div className="LeftWrapper">
+          <IoIosArrowDropleftCircle className="left" onClick={handleLeft} />
+        </div>
       </div>
-      <div className='LeftWrapper'>
-        <IoIosArrowDropleftCircle className='left' onClick={handleLeft} />
-      </div>
-
       {one ? (
         <Project
-          title='CV Generator'
-          link='https://drive.google.com/file/d/1NmoW0M0gn1n19iPn2Hk7UMuC08_aPFf2/view?ts=5f31473b'
+          title="CV Generator"
+          link="https://drive.google.com/file/d/1NmoW0M0gn1n19iPn2Hk7UMuC08_aPFf2/view?ts=5f31473b"
           image={laptop}
           technologies={[
             "react",
@@ -89,14 +90,15 @@ const DisplayProject = () => {
       )}
       {three ? (
         <Project
-          title='Online Shop'
-          link='https://netflix-clone130678.web.app/'
+          title="Online Shop"
+          link="https://netflix-clone130678.web.app/"
           image={nike}
           technologies={["React", "Sass", "firebase", "typeScript", "Redux"]}
         />
       ) : (
         <></>
       )}
+      
     </div>
   );
 };
