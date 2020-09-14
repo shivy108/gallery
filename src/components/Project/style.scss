@@ -8,18 +8,16 @@
   display: flex;
   margin-bottom: 5rem;
 
-  justify-content: center;
-  align-items: center;
   .projectTitle {
     position: relative;
     background-color: rgba(238, 130, 238, 0.4);
     width: fit-content;
     text-align: end;
     color: rgb(19, 46, 60);
-    box-shadow: -1px -1px 20px 1px rgba(245, 245, 245,0.5);
+    box-shadow: -1px -1px 20px 1px rgba(245, 245, 245, 0.5);
     padding: 1rem;
     transition: 300ms;
-    font-size: 1rem;
+    margin-bottom: 2rem;
   }
   .projectTitle:hover {
     scale: 1.06;
@@ -35,7 +33,7 @@
   margin: 1rem;
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  font-size: 0.8rem;
+  
   box-shadow: -1px 0px 10px 4px rgba(17, 17, 17, 0.4);
   padding: 0.3rem;
   width: fit-content;
@@ -44,15 +42,15 @@
   .tech {
     padding-left: 0.3rem;
     margin: 0.3rem;
-    border-left: 0.1rem solid rgba(238, 130, 238,0.4);
+    border-left: 0.1rem solid rgba(238, 130, 238, 0.4);
   }
 }
 .techTitle {
-  font-size: 1rem;
+  font-size: larger;
   padding: 0.3rem;
   color: violet;
   margin-top: 1rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   width: fit-content;
 }
 .image1 {
@@ -63,11 +61,20 @@
   width: 50%;
   display: flex;
   align-items: center;
+  animation-name: slide;
+  animation-duration: 1s;
   justify-content: flex-start;
 }
 .detailWrapper {
-  position: relative;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
   width: 50%;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide{
+  from {opacity: 0;}
+  to{opacity: 1;}
 }

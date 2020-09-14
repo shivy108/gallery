@@ -2,17 +2,50 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  animation-name: displayProject;
+  animation-duration: 2s;
 }
-.right {
+@keyframes displayProject {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.LeftWrapper {
+  font-size: 4rem;
   cursor: pointer;
-  position: relative;
-  left: 100%;
-  font-size: 6rem;
   margin: 1rem;
 }
 
-.left {
-  font-size: 6rem;
+.RightWrapper {
   cursor: pointer;
+  position: relative;
+  left: 100%;
+  font-size: 3rem;
   margin: 1rem;
+}
+
+.left, .right  {
+  animation-name: scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transition: 300ms;
+  opacity: 0.4;
+}
+
+@keyframes scale{
+  0%{scale: 0.98;}
+  50%{scale: 1.12;}
+  100%{scale: 1.0;}
+  
+  
+}
+.left:hover,.right:hover{
+  transition: 300ms;
+  color: violet;
+  opacity: 0.4;
+  scale:1.05;
 }
